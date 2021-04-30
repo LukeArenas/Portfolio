@@ -1,38 +1,513 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  font-size: larger;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 2vw;
+}
+
+.link:hover {
+  text-decoration: none;
+  background-color: rgb(226, 226, 226);
+  color: #95cebc;
+}
+
+span {
+  padding: 0 0 0 1vw;
+}
+
+.profile-container {
+  background-color: rgb(160, 160, 160);
+  margin: 0;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 25vw;
+  margin: 2vh 0;
+}
+
+.sidebar {
+  width: 15%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  background-color: rgb(213, 213, 213);
+  z-index: 1;
+}
+
+.name {
+  color: #95cebc;
+  margin: 0;
+  font-size: 2vw;
+}
+
+.subtitle {
+  font-size: 1vw;
+  color: white;
+  margin: 0;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  width: 100%;
+  height: 60%;
+}
+
+.outer-content-container {
+  width: 85%;
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+h2 {
+  background-color: #95cebc;
+  margin: 0;
+  height: 15vh;
+  width: 85vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* INTRO*/
+
+.intro-page {
+  background-color: white;
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.intro-content {
+  width: 40vw;
+}
+
+/* PROJECTS */
+
+.project-card-container {
+  background-color: white;
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* PROJECT CARD */
+
+.project-card {
+  background-color: white;
+  width: 20vw;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgb(146, 146, 146);
+  position: relative;
+  margin: 3vh 3vw;
+}
+
+.project-name {
+  height: 5vh;
+  color: #95cebc;
+}
+
+.project-img {
+  max-width: 20vw;
+  border-radius: 5px 5px 0 0;
+}
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+  width: 20vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-content p {
+  width: 80%;
+  text-align: left;
+}
+
+.tech-label {
+  width: 80%;
+  color: #95cebc;
+  text-align: left;
+}
+
+.tech-list {
+  width: 80%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.tech-list li {
+  width: 50%;
+  text-align: left;
+}
+
+.project-link {
+  display: flex;
+  align-items: center;
+  width: 40%;
+}
+
+.project-link:hover {
+  text-decoration: none;
+}
+
+.project-link .mdi-av-web,
+.project-link .devicon-github-original {
+  color: #95cebc;
+  font-size: x-large;
+}
+
+.project-link .mdi-av-web:hover,
+.project-link .devicon-github-original:hover {
+  color: black;
+}
+
+/* ABOUT */
+
+.about-page {
+  width: 100%;
+  min-height: 80vh;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-picture {
+  width: 30vw;
+}
+
+.about-page p {
+  width: 30vw;
+  font-size: x-large;
+}
+
+/* SKILLS */
+
+.skills-page {
+  width: 100%;
+  height: 80vh;
+  background-color: white;
+}
+
+.logo {
+  height: 30vh;
+  width: auto;
+}
+
+.carousel-container {
+  width: 100%;
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-carousel-container {
+  width: 85vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.carousel-control-next {
+  width: auto;
+  position: absolute;
+  right: 2vw;
+  color: black;
+  opacity: 1;
+  font-size: xxx-large;
+}
+
+.carousel-control-prev {
+  width: auto;
+  position: absolute;
+  left: 2vw;
+  color: black;
+  opacity: 1;
+  font-size: xxx-large;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  color: black;
+}
+
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+  color: black;
+}
+
+/* EDUCATION */
+
+.education-page {
+  width: 100%;
+  height: 60vh;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.education-card {
+  width: 35vw;
+  height: 60%;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgb(146, 146, 146);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.education-card-content {
+  width: 80%;
+  text-align: left;
+}
+
+.school {
+  color: #95cebc;
+}
+
+/* CONTACT */
+
+.contact-page {
+  width: 100%;
+  height: 70vh;
+  background-color: red;
+  background: url('https://res.cloudinary.com/do9hdvtuz/image/upload/v1619553662/mountains-background_tqrez2.png');
+  background-position: top;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.contact-content {
+  width: 20vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 5vh;
+}
+
+.contact-content p {
+  width: 30vw;
+  font-size: x-large;
+}
+
+.contact-content a {
+  text-decoration: none;
+}
+
+.devicon-github-original,
+.devicon-linkedin-plain {
+  font-size: 5vw;
+  color: rgb(146, 146, 146);
+}
+
+.devicon-github-original:hover {
+  color: black;
+}
+
+.devicon-linkedin-plain:hover {
+  color: #0a66c2;
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    width: 100vw;
+    height: 20vh;
   }
-  to {
-    transform: rotate(360deg);
+
+  .profile-container {
+    width: 100%;
+    height: 70%;
+  }
+
+  .profile {
+    width: 100%;
+  }
+
+  .name {
+    width: 100%;
+    font-size: xx-large;
+  }
+
+  .subtitle {
+    width: 100%;
+    font-size: large;
+  }
+
+  .menu {
+    height: 30%;
+    justify-content: space-around;
+  }
+
+  .link {
+    width: auto;
+    font-size: small;
+  }
+
+  i {
+    width: 0px;
+    color: transparent;
+  }
+
+  .outer-content-container {
+    width: 100vw;
+  }
+
+  h2 {
+    width: 100%;
+  }
+
+  #projects,
+  #about,
+  #skills,
+  #education {
+    width: 100vw;
+  }
+
+  .spacer-div {
+    height: 20vh;
+    width: 100vw;
+  }
+
+  #introduction {
+    width: 100%;
+  }
+
+  .intro-page {
+    width: 100%;
+  }
+
+  .profile-pic {
+    width: 75%;
+  }
+
+  .intro-content {
+    width: 90%;
+  }
+
+  .project-img {
+    min-width: 100%;
+  }
+
+  .project-card {
+    width: 80vw;
+  }
+
+  .card-content {
+    width: 100%;
+  }
+
+  .card-content p,
+  .card-content label,
+  .tech-list {
+    width: 80%;
+  }
+
+  .tech-list {
+    display: block;
+  }
+
+  .about-page img {
+    width: 75%;
+    margin: 5vh 0;
+  }
+
+  .about-page p {
+    width: 90%;
+  }
+
+  .skills-page {
+    height: 50vh;
+  }
+
+  .carousel-container {
+    width: 100vw;
+    height: 40vh;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    color: transparent;
+  }
+
+  .logo {
+    width: 25vw;
+    height: auto;
+  }
+
+  .skill {
+    font-size: small;
+  }
+
+  .education-page {
+    min-height: 100vh;
+    align-items: center;
+  }
+
+  .education-card {
+    width: 80%;
+    height: auto;
+  }
+
+  .contact-page {
+    width: 100%;
+    height: 50vh;
+    background-position: center bottom;
+    background-size: 180% 80%;
+    background-repeat: no-repeat;
+  }
+
+  .contact-content {
+    width: 80%;
+  }
+
+  .contact-content p {
+    width: 100%;
+  }
+
+  .devicon-github-original,
+  .devicon-linkedin-plain {
+    font-size: 20vw;
   }
 }

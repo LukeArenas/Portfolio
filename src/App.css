@@ -529,14 +529,21 @@ h2 {
 
   .contact-content {
     width: 80%;
+    display: flex;
+    justify-content: center;
   }
 
-  .contact-content p {
-    width: 100%;
+  .footer,
+  .footer-link {
+    width: 30%;
   }
 
   .devicon-github-original,
   .devicon-linkedin-plain {
+    font-size: 20vw;
+  }
+
+  .footer i {
     font-size: 20vw;
   }
 }

@@ -4,7 +4,7 @@ import profilePicture from '../images/Profile-Picture.jpg'
 const Introduction = () => {
   return (
     <div id="introduction">
-      <h2>PORTFOLIO</h2>
+      <h2 className="intro-title">PORTFOLIO</h2>
       <div className="intro-page">
         <img src={profilePicture} alt="luke" className="profile-pic" />
         <h3 className="intro-content">

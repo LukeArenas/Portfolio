@@ -129,6 +129,10 @@ h2 {
   margin: 3vh 3vw;
 }
 
+.project-card:hover {
+  box-shadow: 0 4px 8px rgb(110, 110, 110);
+}
+
 .project-name {
   height: 5vh;
   color: #95cebc;
@@ -418,6 +422,10 @@ h2 {
     width: 100%;
   }
 
+  .intro-title {
+    height: 0;
+  }
+
   .profile-pic {
     width: 75%;
   }
@@ -488,6 +496,7 @@ h2 {
   .education-card {
     width: 80%;
     height: auto;
+    padding-bottom: 2vh;
   }
 
   .contact-page {

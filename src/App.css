@@ -401,12 +401,14 @@ h2 {
 
   .menu {
     height: 30%;
-    justify-content: space-around;
+    justify-content: center;
   }
 
   .link {
     width: auto;
     font-size: small;
+    padding-right: 2vw;
+    height: 100%;
   }
 
   i {

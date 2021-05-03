@@ -33,7 +33,7 @@ function App() {
             <i class="mdi-social-school small"></i>
             <span>Education</span>
           </a>
-          <a href="#contact" className="link">
+          <a href="mailto:lukedarenas@gmail.com" className="link">
             <i class="mdi-communication-email small"></i>
             <span>Contact</span>
           </a>

@@ -13,8 +13,12 @@ const ProjectCard = (props) => {
   }
   return (
     <div className="project-card-container">
-      {props.projects.map((project) => (
-        <div onClick={() => handleClick(project.name)} className="project-card">
+      {props.projects.map((project, idx) => (
+        <div
+          onClick={() => handleClick(project.name)}
+          className="project-card"
+          key={idx}
+        >
           <img src={project.images} alt="project" className="project-img" />
           <h3 className="project-name">{project.name}</h3>
           {isClicked && selectedCard === project.name ? (

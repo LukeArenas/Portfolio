@@ -120,34 +120,23 @@ h2 {
 
 /* PROJECT CARD */
 
-.project-card {
-  background-color: white;
-  width: 20vw;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgb(146, 146, 146);
-  position: relative;
-  margin: 3vh 3vw;
-}
-
-.project-card:hover {
-  box-shadow: 0 4px 8px rgb(110, 110, 110);
-}
-
 .project-name {
   height: 5vh;
+  margin: 1vh 0 0 0;
   color: #95cebc;
 }
 
 .project-img {
   max-width: 20vw;
   border-radius: 5px;
+  box-shadow: 0 0 10px rgb(146, 146, 146);
 }
 
 .card-content {
   position: absolute;
   bottom: 0;
   height: 100%;
-  background-color: white;
+  box-shadow: 0 0 10px rgb(146, 146, 146);
   border-radius: 5px;
   color: black;
   width: 20vw;
@@ -199,6 +188,49 @@ h2 {
 .project-link .mdi-av-web:hover,
 .project-link .devicon-github-original:hover {
   color: black;
+}
+
+.flip-card {
+  perspective: 1000px;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 5px;
+  position: relative;
+  margin: 3vh 3vw;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+  transform: rotateY(180deg);
 }
 
 /* ABOUT */
@@ -548,47 +580,4 @@ h2 {
   .footer i {
     font-size: 20vw;
   }
-}
-
-.flip-card {
-  perspective: 1000px;
-  width: 20vw;
-  height: 20vw;
-  border-radius: 5px;
-  position: relative;
-  margin: 3vh 3vw;
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front,
-.flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-}
-
-.flip-card-back {
-  background-color: rgb(238, 238, 238);
-  border-radius: 5px;
-  color: black;
-  transform: rotateY(180deg);
 }

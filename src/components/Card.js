@@ -14,21 +14,31 @@ const Card = (props) => {
               />
             </div>
             <div class="flip-card-back">
-              <h3 className="project-name">{project.name}</h3>
-              <h5 className="tech-label">Description:</h5>
-              <p>{project.description}</p>
-              <h5 className="tech-label">Technologies:</h5>
-              <ul className="tech-list">
-                {project.technologies.map((tech) => {
-                  return <li>{tech}</li>
-                })}
-              </ul>
-              <a href={project.github} target="blank" className="project-link">
-                <i class="devicon-github-original">Source</i>
-              </a>
-              <a href={project.website} target="blank" className="project-link">
-                <i class="mdi-av-web small">Website</i>
-              </a>
+              <div className="card-content">
+                <h3 className="project-name">{project.name}</h3>
+                <h5 className="tech-label">Description:</h5>
+                <p>{project.description}</p>
+                <h5 className="tech-label">Technologies:</h5>
+                <ul className="tech-list">
+                  {project.technologies.map((tech) => {
+                    return <li>{tech}</li>
+                  })}
+                </ul>
+                <a
+                  href={project.github}
+                  target="blank"
+                  className="project-link"
+                >
+                  <i class="devicon-github-original">Source</i>
+                </a>
+                <a
+                  href={project.website}
+                  target="blank"
+                  className="project-link"
+                >
+                  <i class="mdi-av-web small">Website</i>
+                </a>
+              </div>
             </div>
           </div>
         </div>

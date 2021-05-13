@@ -504,10 +504,26 @@ h2 {
   .card-content label,
   .tech-list {
     width: 80%;
+    margin: 0;
+  }
+
+  .tech-label {
+    margin: 0;
+    font-size: 20px;
   }
 
   .tech-list {
-    display: block;
+    display: flex;
+  }
+
+  .flip-card {
+    width: 80vw;
+    height: 80vw;
+  }
+
+  .project-link .mdi-av-web,
+  .project-link .devicon-github-original {
+    font-size: large;
   }
 
   .about-page img {

@@ -38,7 +38,7 @@ function App() {
             <span>Contact</span>
           </a>
           <a
-            href="https://docs.google.com/document/d/121lqfi_ufRMJwIwPMr0pbVZynDH6AcJosKHs-0EU6eA/edit"
+            href="https://docs.google.com/document/d/1OQFxwP9TdKxkS8HuEd2IMUXx3zUGBr4GV8seCFyDBNE/edit"
             target="blank"
             className="link"
           >

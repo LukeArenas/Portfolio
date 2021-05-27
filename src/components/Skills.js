@@ -9,9 +9,6 @@ import {
   express,
   mongo,
   postgres,
-  python,
-  flask,
-  sqlAlchemy,
   github,
   heroku,
   aws
@@ -73,22 +70,6 @@ const Skills = () => {
                 <div>
                   {postgres}
                   <h3 className="skill">PostgreSQL</h3>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div className="inner-carousel-container">
-                <div>
-                  {python}
-                  <h3 className="skill">Python</h3>
-                </div>
-                <div>
-                  {flask}
-                  <h3 className="skill">Flask</h3>
-                </div>
-                <div>
-                  {sqlAlchemy}
-                  <h3 className="skill">SQLAlchemy</h3>
                 </div>
               </div>
             </div>

@@ -129,7 +129,6 @@ h2 {
 .project-img {
   max-width: 20vw;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgb(146, 146, 146);
 }
 
 .card-content {
@@ -222,8 +221,10 @@ h2 {
 }
 
 .flip-card-front {
-  background-color: #bbb;
+  background-color: white;
   color: black;
+  box-shadow: 1px 1px 5px grey;
+  border-radius: 5px;
 }
 
 .flip-card-back {

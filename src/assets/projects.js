@@ -28,6 +28,16 @@ export const projectsArray = [
     github: 'https://github.com/f-ansari/code_stack'
   },
   {
+    name: 'Synchronize',
+    description:
+      'Calendar app that allows users to create and schedule events on their personal calendar.',
+    technologies: ['MongoDB', 'GraphQL', 'React.js', 'Node.js'],
+    images:
+      'https://res.cloudinary.com/do9hdvtuz/image/upload/c_crop,h_928,w_980/v1624285754/Synchronize_xtmm3n.jpg',
+    website: 'https://pure-river-50083.herokuapp.com/auth',
+    github: 'https://github.com/LukeArenas/Synchronize'
+  },
+  {
     name: 'Barter',
     description: 'Ecommerce app that allows users to buy and sell items.',
     technologies: ['MongoDB', 'Express.js', 'React.js', 'Node.js'],
